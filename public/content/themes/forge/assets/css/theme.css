@@ -1,0 +1,155 @@
+:root {
+  --area-background-color: #2F1E2D;
+  --border-color: #694262;
+}
+
+
+@font-face {
+  /* font-family: "starship";
+  src: url("../fonts/starshipShadow/StarshipShadow.otf") */
+}
+
+
+body.forge {
+  margin: 0;
+  background-color: #010812;
+  color: #ccc;
+}
+
+.fancy {
+  /*  font-family: 'starship', monospace; */
+  /* letter-spacing: 0.25rem; */
+
+  font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+}
+
+
+
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+}
+
+
+
+
+.site-header-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 43.5vh;
+  color: #fff;
+
+
+
+  /* text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px; */
+  font-weight: light;
+}
+
+.site-title {
+  font-size: 4vh;
+}
+
+.site-pitch {
+font-size: 2vh;
+}
+
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FF9800;
+}
+
+
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* border: solid 1px #f0f; */
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 1rem;
+}
+
+.navbar {
+  background-color: var(--area-background-color);
+  border-bottom: solid 3px #50294A;
+  border-top: solid 3px #50294A;
+  /* border-radius: 16px; */
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.content-block {
+  background-color: var(--area-background-color);
+  padding: 1rem;
+  position: relative;
+  border: solid 3px #50294A;
+
+  /* bootsborder-radius: 16px; */
+}
+
+.content-block img {
+  max-width: 100%;
+}
+
+
+.col {
+  /* outline: solid 1px #f0f; */
+  padding: 0;
+}
+
+
+.navbar a {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #D7BA7D;
+  background-color: #858585;
+  border-bottom: none;
+
+}
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D7BA7D;
+  border-bottom: solid 1px #D7BA7D;
+}
+
+
+.card {
+  background-color: #252526;
+  border: solid 1px #000;
+  height: 100%;
+}
+
+
+.card {
+
+}
+
+.card .post-thumbnail {
+  float: left;
+  max-width: 200px;
+  height: auto;
+
+  margin-right: 1rem;
+}

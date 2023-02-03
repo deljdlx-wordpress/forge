@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Deljdlx\\WPForge\\Plugin\\": "./src/class"
+        }
+    },
+    "config": {
+        "vendor-dir": "composer"
+    }
+}

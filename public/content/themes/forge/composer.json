@@ -1,0 +1,21 @@
+{
+    "autoload": {
+        "psr-4" : {
+            "Deljdlx\\WPForge\\" : "./_src/class",
+            "Deljdlx\\WPForge\\Components\\" : "./components"
+        },
+        "files": [
+            "_src/helpers.php"
+        ]
+    },
+
+    "config": {
+        "vendor-dir": "composer"
+    },
+    "require": {
+        "illuminate/view": "^9",
+        "jgrossi/corcel": "^6.0",
+        "illuminate/config": "^9.48",
+        "symfony/var-dumper": "^6.2"
+    }
+}

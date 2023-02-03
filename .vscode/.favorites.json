@@ -1,0 +1,26 @@
+[
+    {
+        "type": "Group",
+        "name": "Theme Forge",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "Y2Ut3u8mkVMcbIKz"
+    },
+    {
+        "type": "File",
+        "name": "/var/www/html/forge/public/content/themes/forge/functions.php",
+        "parent_id": "Y2Ut3u8mkVMcbIKz",
+        "workspaceRoot": "/var/www/html/forge",
+        "workspacePath": "public/content/themes/forge/functions.php",
+        "id": "DxR0w8pbf2P67Cny"
+    },
+    {
+        "type": "File",
+        "name": "/var/www/html/forge/public/wp-config.php",
+        "parent_id": null,
+        "workspaceRoot": "/var/www/html/forge",
+        "workspacePath": "public/wp-config.php",
+        "id": "7LtxQPre4BM12bgR"
+    }
+]

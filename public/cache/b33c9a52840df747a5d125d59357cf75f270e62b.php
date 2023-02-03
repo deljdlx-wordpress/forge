@@ -1,0 +1,1 @@
+hello world<?php /**PATH /var/www/html/forge/public/content/themes/forge/views/homepage.blade.php ENDPATH**/ ?>

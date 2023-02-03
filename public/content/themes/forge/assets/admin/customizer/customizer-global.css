@@ -1,0 +1,12 @@
+/* CSS pour le customizer*/
+.customize-partial-refreshing {
+  opacity: 1;
+}
+
+
+/*.customize-partial-edit-shortcut, .widget .customize-partial-edit-shortcut*/
+
+.customize-partial-edit-shortcut {
+  /* border: solid 2px #f0f;
+  left: 100px; */
+}
