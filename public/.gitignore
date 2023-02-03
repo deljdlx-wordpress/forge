@@ -25,3 +25,4 @@ content/themes/*
 content/plugins/*
 !content/plugins/
 !content/plugins/deljdlx-forge
+!content/plugins/mention

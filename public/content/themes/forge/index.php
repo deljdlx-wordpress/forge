@@ -1,9 +1,12 @@
 <?php
 if(is_singular()) {
-    echo wp_forge()->view->render('singular', ['post' => wp_forge()->loop->getPost()]);
+    echo wp_forge()->view->render('layouts.singular', ['post' => wp_forge()->loop->getPost()]);
+}
+elseif(is_archive()) {
+    echo wp_forge()->view->render('layouts.archive');
 }
 else {
-    echo wp_forge()->view->render('homepage');
+    echo wp_forge()->view->render('layouts.homepage');
 }
 
 ?>

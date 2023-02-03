@@ -1,6 +1,15 @@
 :root {
   --area-background-color: #2F1E2D;
   --border-color: #694262;
+
+  --border-size: 3px;
+  --border-style: solid;
+  --border: var(--border-style) var(--border-size) var(--border-color);
+
+  --gutter: 1rem;
+
+  --font-fancy: 'Cinzel Decorative', cursive;
+
 }
 
 
@@ -20,7 +29,7 @@ body.forge {
   /*  font-family: 'starship', monospace; */
   /* letter-spacing: 0.25rem; */
 
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: var(--font-fancy);
   color: #fff;
   text-shadow: 3px 3px 3px #000;
 }
@@ -29,7 +38,7 @@ body.forge {
 
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: var(--font-fancy);
   color: #fff;
   text-shadow: 3px 3px 3px #000;
 }
@@ -59,14 +68,9 @@ font-size: 2vh;
 }
 
 
-path {
-  fill: transparent;
+.forge-layout-footer {
+  margin-top: var(--gutter);
 }
-
-text {
-  fill: #FF9800;
-}
-
 
 
 
@@ -84,18 +88,18 @@ main {
 
 .navbar {
   background-color: var(--area-background-color);
-  border-bottom: solid 3px #50294A;
-  border-top: solid 3px #50294A;
+  border-bottom: var(--border);
+  border-top: var(--border);
   /* border-radius: 16px; */
   padding: 0 2rem;
   font-size: 2rem;
 }
 
 .content-block {
-  background-color: var(--area-background-color);
-  padding: 1rem;
   position: relative;
-  border: solid 3px #50294A;
+  background-color: var(--area-background-color);
+  padding: var(--gutter);
+  border: var(--border);
 
   /* bootsborder-radius: 16px; */
 }
@@ -111,6 +115,10 @@ main {
 }
 
 
+.navbar-header {
+
+}
+
 .navbar a {
   font-family: 'Cinzel Decorative', cursive;
   color: #fff;
@@ -124,6 +132,8 @@ main {
 }
 
 
+
+
 a {
   color: #fff;
   text-decoration: none;
@@ -135,21 +145,140 @@ a:hover {
 }
 
 
-.card {
-  background-color: #252526;
+
+
+.forge-wp-term {
+  background-color: var(--border-color);
+
+  border-radius: var(--gutter);
   border: solid 1px #000;
-  height: 100%;
+  color: #fff;
+  padding: 0 var(--gutter);
 }
 
 
-.card {
+
+.card--post {
+  background-color: #252526;
+  border: solid 1px var(--border-color);
+  box-shadow: 2px 2px 2px #000;
+  border-radius: 4px;
+  position: relative;
+}
+
+.card--post .card-body {
+  display: flex;
+}
+
+
+
+.card--post .card-left {
+  position : relative;
+}
+
+.card--post  .card-content {
 
 }
 
-.card .post-thumbnail {
-  float: left;
-  max-width: 200px;
-  height: auto;
+
+.card--post .post-date{
+  position: absolute;
+  top: var(--gutter);
+  left: calc(var(--gutter) * 1);
+  background-color: #fffa;
+  border: var(--border);
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 80px;
+}
+.card--post .date {
+  align-content: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  line-height: 2.3rem;
+}
+
+.card--post .month {
+  align-content: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+
+.card--post .post-thumbnail {
+  width: 300px;
+  height: 300px;
+
+
+  border: var(--border);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  /* border: solid 5px var(--border-color);
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #000;
+  border: solid 1px #fff;
+  */
 
   margin-right: 1rem;
+  box-shadow: 3px 3px #000;
+}
+
+
+.card--post .post-thumbnail.no-thumbnail {
+  background-size: cover;
+  /* background-position: -40px -40px; */
+  box-shadow: none;
+  position: relative;
+}
+
+.card--post .post-thumbnail.no-thumbnail .categories {
+  font-family: var(--font-fancy);
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff8;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-right__content {
+  margin-left: var(--gutter);
+  padding: var(--gutter);
+  border: var(--border);
+  text-align: right;
+  background-color: var(--area-background-color);
+  flex-grow: 1;
+}
+
+.sidebar-right__illustration {
+  position: relative;
+  height: 250px;
+
+}
+
+.sidebar-right__illustration img {
+  z-index:2;
+  max-width: 100%;
+  margin-top: -6vh;
+  position: absolute;
 }

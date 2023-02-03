@@ -10,10 +10,13 @@ require get_theme_file_path('composer/autoload.php');
 
 
 if(!function_exists('wp_forge')) {
-    function wp_forge()
+    function wp_forge(): Theme
     {
         static $theme;
         if(!$theme) {
+
+
+            // add_post_type_support('page', 'excerpt');
 
             $theme = new Theme('Forge');
             $theme->addCss([
@@ -37,8 +40,13 @@ if(!function_exists('wp_forge')) {
 
             // ===========================================================
 
-
             $theme->view->blade->component('card', Card::class);
+
+            // ===========================================================
+
+            $theme->sidebar->register('sidebar-right', 'Right sidebar');
+            $theme->sidebar->register('sidebar-top', 'Top sidebar');
+            $theme->sidebar->register('sidebar-footer', 'Footer sidebar');
 
             // ===========================================================
 

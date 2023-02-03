@@ -63,7 +63,7 @@ class Post extends ModelPost
         return get_the_category();
     }
 
-    public function getDate(string $format)
+    public function getDate(string $format = 'Y-m-d H:i:s')
     {
         return get_the_date($format);
     }

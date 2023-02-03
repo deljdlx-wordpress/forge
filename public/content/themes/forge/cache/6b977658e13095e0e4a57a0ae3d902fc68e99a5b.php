@@ -1,1 +1,0 @@
-coucou !<?php /**PATH /var/www/html/forge/public/content/themes/forge/templates/test.blade.php ENDPATH**/ ?>

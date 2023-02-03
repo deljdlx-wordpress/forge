@@ -11,6 +11,7 @@ class Theme
     public readonly Menu $menu;
     public readonly Customizer $customizer;
     public readonly Admin $admin;
+    public readonly Sidebar $sidebar;
 
 
     private string $name;
@@ -38,6 +39,8 @@ class Theme
         $this->menu = new Menu($this);
         $this->customizer = new Customizer($this);
         $this->admin = new Admin($this);
+
+        $this->sidebar = new Sidebar($this);
 
 
         $this->registerHooks();

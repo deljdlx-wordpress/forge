@@ -31,6 +31,14 @@ class View
         $this->blade->directive('wp_footer', function () {
             return "<?php wp_footer(); ?>";
         });
+
+        $this->blade->directive('themeUri', function ($expression) {
+            return "<?php echo get_theme_file_uri({$expression});?>";
+        });
+
+        $this->blade->directive('termLink', function ($expression) {
+            return "<a href=\"<?php echo get_term_link($expression);?>\" class=\"forge-wp-term wp-term\"><?php echo {$expression}->name;?></a>";
+        });
     }
 
     public function component(string $name, $callback)

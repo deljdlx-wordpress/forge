@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Mention\\Plugin\\": "./src/class"
+        }
+    },
+    "config": {
+        "vendor-dir": "composer"
+    }
+}
