@@ -1,11 +1,15 @@
 <?php $__env->startSection('header'); ?>
-    <header>
-        <div style="background-image: url(<?php echo get_theme_file_uri('assets/images/search.png');?>); background-size: contain; background-position: 50%; background-repeat: no-repeat; height: 50vh;"></div>
-        <div class="site-header-title" style=";">
-            <div class="site-title fancy">DelJdlx Forge</div>
-            <div class="site-pitch fancy">Code snippets vault</div>
+<header style="display: flex" class="container">
+    <img src="<?=get_theme_file_uri('assets/images/header-search-00.png');?>" style="background-size: contain; background-position: 0 50%; background-repeat: no-repeat; height: 50vh;"/>
+    <div style="text-align: center;">
+        <div class="site-title fancy" style="padding-top: 20vh">
+            <h1 style="font-size: 4rem; text-align: center">
+                Recherche <br/>
+                «<?php echo e(get_search_query()); ?>»
+            </h1>
         </div>
-    </header>
+    </div>
+</header>
 <?php $__env->stopSection(); ?>
 
 
@@ -28,21 +32,9 @@
 <?php endif; ?>
     </div>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
-    <div class="pagination-container">
-        <?php
-        the_posts_pagination( array(
-            'mid_size' => 2,
-            'prev_text' => __( 'Page précédente', 'forge' ),
-            'next_text' => __( 'Page suivante', 'forge' ),
-        ) );
-        ?>
-    </div>
-
-
 <?php $__env->stopSection(); ?>
 
 
 
 
-<?php echo $__env->make('layouts.common.with-right-column', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/forge/public/content/themes/forge/templates/layouts/homepage.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.common.with-right-column', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/forge/public/content/themes/forge/templates/layouts/search.blade.php ENDPATH**/ ?>

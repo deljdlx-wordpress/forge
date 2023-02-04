@@ -9,7 +9,6 @@
   --gutter: 1rem;
 
   --font-fancy: 'Cinzel Decorative', cursive;
-
 }
 
 
@@ -155,6 +154,45 @@ a:hover {
   color: #fff;
   padding: 0 var(--gutter);
 }
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.pagination-container .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: var(--font-fancy);
+}
+
+.pagination .page-numbers {
+  margin: 0 5px;
+
+  border: var(--border);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  width: 30px;
+}
+
+.pagination .current {
+  background-color: #252526;
+}
+
+.pagination .next.page-numbers, .pagination .prev.page-numbers {
+  border: none;
+  width: auto;
+  margin-left: 1rem;
+}
+
 
 
 

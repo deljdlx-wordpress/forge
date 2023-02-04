@@ -3,7 +3,7 @@
 
 @section('header')
     <header>
-        <div style="background-image: url(@themeUri('assets/images/header-01.png')); background-size: contain; background-position: 50%; background-repeat: no-repeat; height: 50vh;"></div>
+        <div style="background-image: url(@themeUri('assets/images/search.png')); background-size: contain; background-position: 50%; background-repeat: no-repeat; height: 50vh;"></div>
         <div class="site-header-title" style=";">
             <div class="site-title fancy">DelJdlx Forge</div>
             <div class="site-pitch fancy">Code snippets vault</div>
@@ -18,6 +18,18 @@
         <x-card :post="$post"></x-card>
     </div>
     @endforeach
+
+    <div class="pagination-container">
+        <?php
+        the_posts_pagination( array(
+            'mid_size' => 2,
+            'prev_text' => __( 'Page précédente', 'forge' ),
+            'next_text' => __( 'Page suivante', 'forge' ),
+        ) );
+        ?>
+    </div>
+
+
 @endsection
 
 

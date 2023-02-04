@@ -6,8 +6,6 @@ if(!$thumbnail) {
     $thumbnail = get_theme_file_uri('assets/images/no-thumbnail-01.png');
     $thumbnailClass = 'no-thumbnail';
 }
-
-
 ?>
 
 <div class="card card--post">
