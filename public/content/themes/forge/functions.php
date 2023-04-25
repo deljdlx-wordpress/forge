@@ -24,11 +24,13 @@ if(!function_exists('wp_forge')) {
                 'https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
                 'assets/css/theme.css',
+                'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-coy.min.css',
             ]);
 
             $theme->addJs([
                 'https://code.jquery.com/jquery-3.6.4.min.js',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js',
             ]);
 
             // ===========================================================
