@@ -91,7 +91,7 @@ class Theme
 
     public function addJs(array $js)
     {
-        $this->js = array_merge($this->css, $js);
+        $this->js = array_merge($this->js, $js);
         return $this;
     }
 
@@ -120,9 +120,14 @@ class Theme
     public function loadJs()
     {
         foreach ($this->js as $index => $url) {
+
+            if(strpos($url, 'http') !==0 ) {
+                $url = get_theme_file_uri($url);
+            }
+
             wp_enqueue_script(
                 'forge-js-' . $index,   // js unique name
-                get_theme_file_uri($url),
+                $url,
                 [], // handle dependencies
                 '1.0.0', // javascript file version
                 true // js file loaded at the end of body
