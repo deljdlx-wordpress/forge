@@ -1,6 +1,6 @@
 <?php $__env->startSection('header'); ?>
     <header>
-        <div style="background-image: url(<?php echo get_theme_file_uri('assets/images/search.png');?>); background-size: contain; background-position: 50%; background-repeat: no-repeat; height: 50vh;"></div>
+        <div style="background-image: url(<?php echo get_theme_file_uri('assets/images/header-01.png');?>); background-size: contain; background-position: 50%; background-repeat: no-repeat; height: 50vh;"></div>
         <div class="site-header-title" style=";">
             <div class="site-title fancy">DelJdlx Forge</div>
             <div class="site-pitch fancy">Code snippets vault</div>

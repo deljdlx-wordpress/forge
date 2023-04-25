@@ -11,5 +11,4 @@
         </li>
     @endforeach
 </ul>
-
 <x-random-number min="50" max="75"/>

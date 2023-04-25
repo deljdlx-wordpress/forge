@@ -1,11 +1,13 @@
 <?php
 namespace Deljdlx\WPForge\Controllers;
 
+use Deljdlx\WPForge\Theme;
+
 class Controller
 {
-    protected $theme;
+    protected Theme $theme;
 
-    public function __construct($theme)
+    public function __construct(Theme $theme)
     {
         $this->theme = $theme;
     }
