@@ -1,1 +1,0 @@
-54<?php /**PATH /var/www/html/forge/public/content/themes/forge/cache/80e28a51cbc26fa4bd34938c5e593b36146f5e0c.blade.php ENDPATH**/ ?>
