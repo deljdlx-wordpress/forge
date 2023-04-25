@@ -42,7 +42,7 @@ if(!$thumbnail) {
             <hr/>
 
 
-            <p class="card-text">{{$post->getExcerpt()}}</p>
+            {{-- <p class="card-text">{{!!$post->getExcerpt()!!}}</p> --}}
         </div>
     </div>
 </div>
